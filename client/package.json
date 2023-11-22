@@ -1,4 +1,5 @@
 {
+	"homepage": "https://yashpareekk.github.io/Krodh-Ai-Custom-T-shirt",
 	"name": "client",
 	"private": true,
 	"version": "0.0.0",
@@ -16,16 +17,17 @@
 		"gh-pages",
 		"html2canvas"
 	],
-	"author": "exslym",
+	"author": "Krodh",
 	"browserslist": [
 		"cover 99.5%"
 	],
 	"scripts": {
 		"start": "vite --port 3000 --open",
+		"predeploy":"npm run build",
+		"deploy": "gh-pages -d build",
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview",
-		"deploy": "gh-pages -d build"
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@react-three/drei": "^9.78.2",

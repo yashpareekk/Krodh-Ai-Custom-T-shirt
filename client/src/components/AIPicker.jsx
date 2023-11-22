@@ -42,7 +42,7 @@ const AIPicker = ({ type, prompt, setPrompt, generatingImg, handleSubmit }) => {
 			/>
 			<div id='loading'></div>
 			<div className='flex flex-wrap gap-3'>
-				<>
+				{/* <>
 					<CustomButton
 						type='outline'
 						title='AI Logo'
@@ -55,8 +55,8 @@ const AIPicker = ({ type, prompt, setPrompt, generatingImg, handleSubmit }) => {
 						handleClick={() => handleSubmit('full')}
 						customStyles='aipicker-buttons lg:text-[1.2rem] text-[100%] font-bold'
 					/>
-				</>
-				{/* {generatingImg ? (
+				</> */}
+				{generatingImg ? (
 					<CustomButton type='outline' title='Ask AI...' customStyles='text-lg' />
 				) : (
 					<>
@@ -73,7 +73,7 @@ const AIPicker = ({ type, prompt, setPrompt, generatingImg, handleSubmit }) => {
 							customStyles='lg:text-[1.2rem] text-[100%] font-bold'
 						/>
 					</>
-				)} */}
+				)}
 			</div>
 		</div>
 	);
